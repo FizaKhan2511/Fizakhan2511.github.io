@@ -1,0 +1,49 @@
+ #small{
+    background-color: red;
+  }
+  #small p {
+    color :aqua;
+    font-size: small;
+  }
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+  
+@media only screen and (min-width: 300px){
+   #medium {
+    background-color: green;
+    
+   }
+   #medium p{
+    color :blueviolet;
+    font-size: medium;
+   }
+}
+
+@media only screen and (min-width: 768px){
+  .cont{
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  #large {
+    background-color: blue;
+    
+  }
+  #large p{
+    color :brown;
+    font-size: large;
+  }
+  
+}
+
+h2 {
+ font-weight: bolder; 
+ text-align: center;
+ text-decoration: underline;
+}
+
+p{
+ text-align: center;  
+}

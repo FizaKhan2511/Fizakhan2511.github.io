@@ -1,0 +1,21 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(backVCard.png);
+    background-size: cover;
+}
+.box{
+    width: 450px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    margin: auto;
+    margin-top: 5%;
+    position: absolute;
+    left: 35%;
+    color :brown;
+    width: 25%;
+    text-align: center;
+    border-radius : 20px; 
+    
+}
