@@ -1,0 +1,58 @@
+*
+
+  body{
+    margin : 10% ;
+   }
+
+
+  a {
+    word-spacing: 5px;
+    text-decoration: none;
+  }
+
+  .nom {
+  
+   font-size: larger;
+  }
+
+  .btn{
+    border-radius: 25%;
+    color : blue;
+  }
+
+ 
+ .bouton,p{
+    font-size: 10px;
+  }
+ 
+ .photo {
+    
+    font-size: 15px;
+    border-width:1px;
+    border-style: solid;
+    border-color:black;
+ }
+
+  hr {
+    margin: 15px;
+  }
+
+ ul{
+    list-style: none;
+    padding-left: 2px;   
+ }
+
+ .text{
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+
+ /*@media only screen and (min-width: 1280px){
+    body {
+      margin :0;
+
+    }
+ }
+*/
