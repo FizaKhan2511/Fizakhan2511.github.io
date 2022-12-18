@@ -1,5 +1,5 @@
 body {
-    background: url(starsBG.jpg);
+    background: url(starBG.jpg);
     width: 100%;
     height: 100%;
     margin: 0;
@@ -11,17 +11,48 @@ body {
     justify-content: center;
 }
 
-.a-long-time-ago {
-    /* cosmétique */
-    font-size: 32px;
-    color: #4bd5ee;
-    /* Animation */
-    /* Apparition et disparition progressive */
+.logo {
+    align-items: center;
     opacity: 0;
     animation-delay: 1s;
     animation-duration: 3s;
+    animation-name: logo;
+    animation-timing-function: ease-out;
+ 
+}
+@keyframes logo {
+    0% {
+      transform: scale(100%);
+    }
+  
+    60% {
+      opacity: 1;
+    }
+  
+    95% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+}
+
+
+
+/*.a-long-time-ago {
+     cosmétique 
+    font-size: 32px;
+    color: #4bd5ee;
+     Animation 
+     Apparition et disparition progressive 
+    opacity: 0;
+    animation-delay: 4s;
+    animation-duration: 2s;
     animation-name: a-long-time-ago;
     animation-timing-function: ease-out;
+
 }
 
 @keyframes a-long-time-ago {
@@ -40,9 +71,84 @@ body {
     100% {
         opacity: 0;
     }
+}*/
+
+.present {
+   font-size: 32px;
+   color: #4bd5ee;
+   opacity: 0;
+   animation-delay: 4s;
+   animation-duration: 3s;
+   animation-name: present;
+   animation-timing-function: ease-out;
+
 }
 
-.crawl {
+@keyframes present {
+   0% {
+       opacity: 0;
+   }
+
+   20% {
+       opacity: 1;
+   }
+
+   80% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+/*.crawl {
+    centrage de l'élément' 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 800px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+     cosmétique 
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+     Applique la transformation  
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+.crawl > div {
+     positionne la div en bas de l'écran (non visible) 
+     l'animation la fait remonter progressivement 
+    position: absolute;
+    top: 100%; 
+    animation-delay: 5s; Démarre l'animation après la première 
+    animation-duration: 20s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;  disparition progressive à la fin 
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}*/
+
+.exp {
     /* centrage de l'élément' */
     position: absolute;
     top: 45%;
@@ -54,25 +160,25 @@ body {
     height: 50em;
     /* cosmétique */
     color: #ffff66;    
-    font-size: 64px;
+    font-size: 80px;
     text-align: justify;
     /* Applique la transformation  */
     transform-origin: center bottom;
     transform: perspective(300px) rotateX(25deg);
 }
 
-.crawl > div {
+.exp > div {
     /* positionne la div en bas de l'écran (non visible) */
     /* l'animation la fait remonter progressivement */
     position: absolute;
     top: 100%; 
-    animation-delay: 2s; /* Démarre l'animation après la première */
-    animation-duration: 20s;
-    animation-name: crawl;
+    animation-delay: 5s; /* Démarre l'animation après la première */
+    animation-duration: 45s;
+    animation-name: exp;
     animation-timing-function: linear;
 }
 
-@keyframes crawl {
+@keyframes exp {
     0% {
         top: 100%;
         opacity: 1;
